@@ -141,7 +141,7 @@ workflows:
             - build
   build-test-deploy:
     jobs:
-      - setup-coverage
+      - setup-coverage:
           filters:
             branches:
               ignore: /.*/
